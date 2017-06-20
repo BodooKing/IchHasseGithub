@@ -22,6 +22,7 @@ import javax.swing.InputMap;
 import javax.swing.JComponent;
 import javax.swing.KeyStroke;
 import java.util.Arrays;
+import javax.swing.JButton;
 
 /**
  * Diese Klasse ist die Klasse, die alle grafischen Elemente ausliest und dann auf das Fenster übeträgt
@@ -37,6 +38,7 @@ public class ImagePanel extends JComponent{
             VariablenBibliothek.textboxImage = ImageIO.read(new File("Textbox.png"));
             
             
+        
             
         } catch (IOException ex) {
             Logger.getLogger(ImagePanel.class.getName()).log(Level.SEVERE, null, ex);
@@ -47,6 +49,13 @@ public class ImagePanel extends JComponent{
             im.put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0), "space");
             am.put("space", new AbstractAction() {
                 public void actionPerformed(ActionEvent evt) {
+                    if(VariablenBibliothek.eventON == true) {
+                        try {
+                            VariablenBibliothek.frontImage = ImageIO.read(new File("empty.png"));
+                        } catch (IOException ex) {
+                            Logger.getLogger(ImagePanel.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    }
                     sr.next();
                     repaint();
                 }
@@ -71,6 +80,8 @@ public class ImagePanel extends JComponent{
         g.setFont(VariablenBibliothek.messageFont);
         g.setColor(VariablenBibliothek.messageColor);
         g.drawString(VariablenBibliothek.message, 200, 450);
+        
+        g.drawImage(VariablenBibliothek.frontImage, 0, 0, this);
         
     }
     

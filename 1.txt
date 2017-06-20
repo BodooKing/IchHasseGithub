@@ -1,4 +1,6 @@
 ﻿TEXT/Sam/Hercules/Normal/Normal/I am so BUFFED!!!1!!1!!!1!1!!1!
 TEXT/Sam/Hercules/Normal/Normal/YEAAAAAAAAAAAAAAAAAAAAAAAAAAH
+COMMAND/event/2
 TEXT/Sam/Hercules/Normal/Normal/LOOK AT ME
+COMMAND/SwitchBackground/2
 COMMAND/SwitchScript/2

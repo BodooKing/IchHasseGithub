@@ -18,6 +18,7 @@ public class VariablenBibliothek {
     public static Image backgroundImage;
     public static Image characterImage;
     public static Image faceImage;
+    public static Image frontImage;
     //SystemImages
     public static Image textboxImage;
     
@@ -38,6 +39,11 @@ public class VariablenBibliothek {
     //Message
     public static Font messageFont = new Font("TimesRoman", Font.PLAIN, 18);
     public static Color messageColor = Color.white;
+    
+    //Booleans und sonstiges
+    //Booleans
+    public static boolean eventON = false;
+    public static boolean reading = false;
     
     
     

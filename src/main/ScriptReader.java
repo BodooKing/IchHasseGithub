@@ -80,9 +80,8 @@ public class ScriptReader {
      * Commands:
      * SwitchScript = DONE (Commad/SwitchScript/Name)
      * Choice = UNDONE
-     * Show Pic (NoText) = UNDONE
-     * Show Pic (Text) = UNDONE
-     * Change Background = UNDONE
+     * EventPic = DONE (Command/event/Name)
+     * Change Background = DONE (Command/SwitchBackground/Name)
      */
     private void analyzeTextLine() {
         VariablenBibliothek.name = VariablenBibliothek.elements[1];
@@ -100,6 +99,15 @@ public class ScriptReader {
                 next();
             } catch (IOException ex) {
                 System.err.println("hintergrundbild konnte nicht geändert werden!");
+            }
+        }
+        else if (VariablenBibliothek.elements[1].toLowerCase().contains("event") == true) {
+            try {
+                VariablenBibliothek.frontImage = ImageIO.read(new File(VariablenBibliothek.elements[2] + ".png"));
+                VariablenBibliothek.eventON = true;
+                        
+            } catch (IOException ex) {
+                System.err.println("FrontImage konnte nicht geladen werden!");
             }
         }
         else {
