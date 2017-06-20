@@ -27,6 +27,9 @@ public class VariablenBibliothek {
     public static String message = "I am so Buffed";
     //Systembezogen
     public static String script = "1.txt";
+    public static String currentLine;
+    
+    public static String[] elements;
     
     //Fonts und die dazugehörigen Farben
     //Name

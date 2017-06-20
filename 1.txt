@@ -1,3 +1,4 @@
 ﻿TEXT/Sam/Hercules/Normal/Normal/I am so BUFFED!!!1!!1!!!1!1!!1!
-asdfadgfscvsd
-{Command}
+TEXT/Sam/Hercules/Normal/Normal/YEAAAAAAAAAAAAAAAAAAAAAAAAAAH
+TEXT/Sam/Hercules/Normal/Normal/LOOK AT ME
+COMMAND/SwitchScript/2

@@ -28,12 +28,10 @@ import java.util.Arrays;
  * @author BK
  */
 public class ImagePanel extends JComponent{
-        
+    ScriptReader sr = new ScriptReader();    
     public ImagePanel() {
         try {
-            ScriptReader sr = new ScriptReader();
-            
-            VariablenBibliothek.backgroundImage = ImageIO.read(new File("1.jpg"));;
+            VariablenBibliothek.backgroundImage = ImageIO.read(new File("1.png"));;
             VariablenBibliothek.characterImage = ImageIO.read(new File("CuteBoi.png"));
             VariablenBibliothek.faceImage = ImageIO.read(new File("Face.png"));
             VariablenBibliothek.textboxImage = ImageIO.read(new File("Textbox.png"));
@@ -49,7 +47,8 @@ public class ImagePanel extends JComponent{
             im.put(KeyStroke.getKeyStroke(KeyEvent.VK_SPACE, 0), "space");
             am.put("space", new AbstractAction() {
                 public void actionPerformed(ActionEvent evt) {
-                    System.out.println("Hallo");
+                    sr.next();
+                    repaint();
                 }
             });
     }
