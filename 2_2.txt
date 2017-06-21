@@ -1,0 +1,2 @@
+﻿COMMAND/SwitchBackground/2
+TEXT/Sam/Hercules/Normal/Normal/Natürlich! Immerhin bin ich total Handsome!

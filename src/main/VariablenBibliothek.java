@@ -24,10 +24,10 @@ public class VariablenBibliothek {
     
     //Alle TextElemente
     //Spielbezogen
-    public static String name = "Hercules";
-    public static String message = "I am so Buffed";
+    public static String name;
+    public static String message;
     //Systembezogen
-    public static String script = "1.txt";
+    public static String script = "1";
     public static String currentLine;
     
     public static String[] elements;
@@ -39,11 +39,17 @@ public class VariablenBibliothek {
     //Message
     public static Font messageFont = new Font("TimesRoman", Font.PLAIN, 18);
     public static Color messageColor = Color.white;
+    //Saved
+    public static Font savedFont = new Font("TimesRoman", Font.PLAIN, 12);
+    public static Color savedColor = new Color(155,155,155,155);
     
     //Booleans und sonstiges
     //Booleans
     public static boolean eventON = false;
     public static boolean reading = false;
+    public static boolean saved = false;
+    public static boolean choice = false;
+    public static String[] choices = new String[4];
     
     
     

@@ -1,0 +1,2 @@
+﻿COMMAND/SwitchBackground/1
+TEXT/Sam/Hercules/Normal/Normal/Ich hasse dich T.T Du hast meine Gefühle ernsthaft verletzt :(

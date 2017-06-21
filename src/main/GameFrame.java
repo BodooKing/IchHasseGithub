@@ -5,21 +5,26 @@
  */
 package main;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 /**
- *
+ * Veni, Vidi, Amavi! - We came, we saw, we loved!
  * @author BK
  */
 public class GameFrame extends JFrame{
     public GameFrame() {
-        this.setTitle("VisNov"); //TODO: Name von Variable (Spielname) abhängig machen oder aktualisieren sobald bestimmt
+        
+        this.setTitle("Veni, Vidi, Amavi!"); 
         
         this.setSize(800,600);
         this.setResizable(false);
@@ -27,8 +32,8 @@ public class GameFrame extends JFrame{
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setLocationRelativeTo(null);
         
+        
         this.setContentPane(new ImagePanel());
-                
         this.setVisible(true);
         
         
